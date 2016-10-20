@@ -6,3 +6,6 @@ ln -s $PWD/.tern-config ~/.tern-config
 ln -s $PWD/.Xresources ~/.Xresources
 ln -s $PWD/.ycm_extra_conf.py ~/.ycm_extra_conf.py
 ln -s $PWD/.zshrc ~/.zshrc
+
+mkdir -p ~/.vim/swaps ~/.vim/undo ~/.vim/backups
+
