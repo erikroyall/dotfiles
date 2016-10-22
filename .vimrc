@@ -27,6 +27,7 @@ Plug 'shawncplus/phpcomplete.vim'
 Plug 'mxw/vim-jsx'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'leafgarland/typescript-vim'
+Plug 'fatih/vim-go'
 
 call plug#end()
 filetype plugin indent on
@@ -43,6 +44,7 @@ set shiftwidth=2	" Number of auto-indent spaces
 set smartindent	" Enable smart-indent
 set smarttab	" Enable smart-tabs
 set softtabstop=2	" Number of spaces per Tab
+set tabstop=2
 
 
 set ruler	" Show row and column ruler information 
@@ -53,6 +55,7 @@ set backspace=indent,eol,start	" Backspace behaviour
 let g:ycm_global_ycm_extra_conf = "/home/erik/.ycm_extra_conf.py"
 let g:ycm_rust_src_path = "/usr/local/rust/rustc-1.12.0/src"
 let g:ycm_python_binary_path = "python"
+let g:ycm_confirm_extra_conf = 0 " Annoying :(
 
 " Tabs (Shift+Tab inserts an actual tab)
 inoremap <S-Tab> <C-V><Tab>
