@@ -5,14 +5,14 @@
 ```sh
 git clone https://gitlab.com/erikroyall/dotfiles.git
 cd dotfiles
-bash init.sh
+chmod +x init && ./init
 ```
 
 ## Removing symlinks
 
 ```sh
-bash clean.sh
+./init clean
 ```
 
-**Warning**: Running `clean.sh` removes all your configuration files
+**Warning**: Running `./init clean` removes all your configuration files
 
