@@ -15,6 +15,10 @@ sub dotfile_init {
   while (my $folder = shift @vim_folders) {
     system("mkdir -p \$HOME/.vim/$folder");
   }
+
+  system("mkdir -p \$HOME/.vim \$HOME/.config");
+  system("ln -s \$HOME/.vim \$HOME\.config/nvim");
+  system("ln -s \$HOME.vimrc \$HOME/.config/nvim/init.vim");
 }
 
 sub dotfile_remove {
