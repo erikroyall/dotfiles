@@ -1,5 +1,6 @@
 if !has('nvim')
   set nocompatible
+  set ttymouse=xterm2
 endif
 
 filetype off
