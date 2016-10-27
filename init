@@ -4,8 +4,9 @@ use strict;
 use warnings;
 
 my @files = (".vimrc", ".eslintrc.json", ".gitconfig", ".tern-config",
-  ".Xresources", ".ycm_extra_conf.py", ".zshrc", ".npmrc");
+  ".Xresources", ".ycm_extra_conf.py", ".zshrc", ".npmrc", ".oh-my-zsh");
 my @vim_folders = ("swaps", "backups", "undo");
+my @symlinks = (".config/nvim/init.vim", ".config/nvim");
 
 sub dotfile_init {
   while (my $file = shift @files) {
@@ -17,12 +18,16 @@ sub dotfile_init {
   }
 
   system("mkdir -p \$HOME/.vim \$HOME/.config");
-  system("ln -s \$HOME/.vim \$HOME\.config/nvim");
+  system("ln -s \$HOME/.vim \$HOME/.config/nvim");
   system("ln -s \$HOME.vimrc \$HOME/.config/nvim/init.vim");
 }
 
 sub dotfile_remove {
   while (my $file = shift @files) {
+    system("rm \$HOME/$file");
+  }
+
+  while (my $file = shift @symlinks) {
     system("rm \$HOME/$file");
   }
 }
