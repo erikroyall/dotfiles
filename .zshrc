@@ -1,3 +1,6 @@
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+
 # from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -5,14 +8,14 @@ stty -ixon
 
 # Path to your oh-my-zsh installation.
 export ZSH=/home/erik/.oh-my-zsh
-export PATH="$PATH:$HOME/.npm-packages/bin"
+export PATH="$PATH:$HOME/.npm-packages/bin:$HOME/bin"
 
 alias xc=xclip -sel clip
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="af-magic"
+ZSH_THEME="xxf"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -56,7 +59,7 @@ ZSH_THEME="af-magic"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git debian extract)
+plugins=(git debian extract command-not-found common-aliases encode64 fasd node perl pip python sudo systemd wd)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -88,3 +91,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+function c {
+  clang -g $1.c -o $1 && ./$1
+}
+

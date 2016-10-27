@@ -29,11 +29,18 @@ Plug 'mxw/vim-jsx'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'fatih/vim-go'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 filetype plugin indent on
 
-set number	" Show line numbers
+colorscheme gruvbox
+set background=dark
+
+set number
+autocmd InsertEnter * :set number
+autocmd InsertLeave * :set relativenumber
+
 set showmatch	" Highlight matching brace
 syntax on
 set ignorecase	" Always case-insensitive
@@ -126,4 +133,6 @@ endif
 
 " Don’t create backups when editing files in certain directories
 set backupskip=/tmp/*,/private/tmp/*
+
+au BufRead,BufNewFile *.asm   set ft=nasm
 
