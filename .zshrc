@@ -93,6 +93,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 function c {
-  clang -g $1.c -o $1 && ./$1
+  clang -Wall -g $1.c -o $1 && ./$1
 }
 

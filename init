@@ -19,7 +19,8 @@ sub dotfile_init {
 
   system("mkdir -p \$HOME/.vim \$HOME/.config");
   system("ln -s \$HOME/.vim \$HOME/.config/nvim");
-  system("ln -s \$HOME.vimrc \$HOME/.config/nvim/init.vim");
+  system("ln -s \$HOME/.vimrc \$HOME/.config/nvim/init.vim");
+  system("ln -s \$PWD/.config/i3 \$HOME/.config/");
 }
 
 sub dotfile_remove {
