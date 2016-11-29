@@ -9,6 +9,8 @@ stty -ixon
 # Path to your oh-my-zsh installation.
 export ZSH=/home/erik/.oh-my-zsh
 export PATH="$PATH:$HOME/.npm-packages/bin:$HOME/bin"
+export PATH="$PATH:$HOME/.yarn/bin"
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 
 alias xc=xclip -sel clip
 
@@ -16,6 +18,8 @@ alias xc=xclip -sel clip
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="xxf"
+
+setopt rm_star_silent
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -96,3 +100,13 @@ function c {
   clang -Wall -g $1.c -o $1 && ./$1
 }
 
+function c+ {
+  clang++ -lstdc++ -std=c++1y -o $1 $1.cpp && ./$1
+}
+
+
+PATH="/home/erik/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/erik/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/erik/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/erik/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/erik/perl5"; export PERL_MM_OPT;

@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 my @files = (".vimrc", ".eslintrc.json", ".gitconfig", ".tern-config",
-  ".Xresources", ".ycm_extra_conf.py", ".zshrc", ".npmrc", ".oh-my-zsh");
+  ".Xresources", ".ycm_extra_conf.py", ".zshrc", ".npmrc", ".oh-my-zsh", ".bashrc", ".bash_aliases");
 my @vim_folders = ("swaps", "backups", "undo");
 my @symlinks = (".config/nvim/init.vim", ".config/nvim");
 

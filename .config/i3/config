@@ -164,7 +164,7 @@ bar {
   }
 }
 
-bindsym $mod+d exec "rofi -show run -location 2 -width 100 -lines 5 -sidebar-mode -modi run,ssh,window,drun"
+bindsym $mod+d exec "rofi -show run -location 2 -width 100 -lines 5 -sidebar-mode -modi run,ssh,window,drun" 
 
 bindsym $mod+Ctrl+l exec "i3lock -b -e -f --image ~/.config/i3/lockscreen.png"
 
@@ -172,8 +172,8 @@ bindsym XF86AudioRaiseVolume exec amixer -D pulse -q set Master 5%+ unmute
 bindsym XF86AudioLowerVolume exec amixer -D pulse -q set Master 5%- unmute
 bindsym XF86AudioMute exec amixer -D pulse -q set Master toggle
 
-bindsym XF86MonBrightnessUp exec light -A 10
-bindsym XF86MonBrightnessDown exec light -U 10
+bindsym XF86MonBrightnessUp exec light -A 5
+bindsym XF86MonBrightnessDown exec light -U 5
 
 exec --no-startup-id feh --bg-fill ~/.config/i3/wallpapers/glitch.png
 exec --no-startup-id nm-applet
