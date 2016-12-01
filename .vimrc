@@ -73,6 +73,9 @@ let g:ycm_global_ycm_extra_conf = "/home/erik/.ycm_extra_conf.py"
 let g:ycm_rust_src_path = "/usr/local/rust/rustc-1.12.0/src"
 let g:ycm_python_binary_path = "python"
 let g:ycm_confirm_extra_conf = 0 " Annoying :(
+let g:ycm_add_preview_to_completeopt = 0
+let g:ycm_autoclose_preview_window_after_insertion = 1
+
 
 " Tabs (Shift+Tab inserts an actual tab)
 inoremap <S-Tab> <C-V><Tab>
