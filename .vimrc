@@ -14,7 +14,6 @@ Plug 'zah/nim.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'moll/vim-node'
 Plug 'Valloric/YouCompleteMe'
-Plug 'artur-shaik/vim-javacomplete2'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
@@ -45,6 +44,7 @@ autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
 
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
+let g:JavaComplete_JavaCompiler = '/usr/bin/javac'
 let g:JavaComplete_Home = $HOME . '/.vim/bundle/vim-javacomplete2'
 let $CLASSPATH .= '.:' . $HOME . '/.vim/bundle/vim-javacomplete2/lib/javavi/target/classes'
 nmap <F4> <Plug>(JavaComplete-Imports-AddSmart)
@@ -151,4 +151,6 @@ au BufRead,BufNewFile *.asm   set ft=nasm
 
 let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
 execute "set rtp+=" . g:opamshare . "/merlin/vim"
+
+let g:airline_powerline_fonts=1
 
