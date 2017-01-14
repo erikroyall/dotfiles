@@ -32,7 +32,7 @@ alias nig="npm install -g"
 # git
 alias gi="git init"
 alias ga="git add ."
-alias gc="git commit -am"
+alias gc="git commit S -am"
 alias gs="git status"
 alias gp="git push"
 alias gl="git log --pretty=oneline"

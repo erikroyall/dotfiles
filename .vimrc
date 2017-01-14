@@ -32,12 +32,13 @@ Plug 'fatih/vim-go'
 Plug 'morhetz/gruvbox'
 Plug 'rust-lang/rust.vim'
 "Plug 'flowtype/vim-flow'
+Plug 'NLKNguyen/papercolor-theme'
 
 call plug#end()
 filetype plugin indent on
 
-"colorscheme gruvbox
-"set background=dark
+colorscheme PaperColor
+set background=light
 
 set number
 autocmd InsertEnter * :set number
