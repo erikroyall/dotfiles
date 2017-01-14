@@ -8,7 +8,7 @@ stty -ixon
 
 # Path to your oh-my-zsh installation.
 export ZSH=/home/erik/.oh-my-zsh
-export PATH="$PATH:$HOME/.npm-packages/bin:$HOME/bin"
+export PATH="$PATH:$HOME/.npm-packages/bin:$HOME/bin:$HOME/.bin"
 export PATH="$PATH:$HOME/.yarn/bin"
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 

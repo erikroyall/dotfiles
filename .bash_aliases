@@ -41,7 +41,7 @@ alias gl="git log --pretty=oneline"
 alias vba="vim ~/.bash_aliases"
 alias vrc="vim ~/.vimrc"
 alias vbrc="vim ~/.bashrc"
-alias re="source ~/.bashrc"
+alias re="source ~/.zshrc"
 
 # docker
 alias di="sudo docker images"
