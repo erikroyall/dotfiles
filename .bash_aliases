@@ -1,8 +1,14 @@
 # APT
-alias pi="sudo pacman -Sy"
+alias ai="sudo apt install -y"
+alias au="sudo apt update -y && sudo apt upgrade -y"
+alias ar="sudo apt remove"
+
+# Pacman
+alias pi="sudo pacman -S"
 alias pu="sudo pacman -Syu"
 alias pr="sudo pacman -R"
 
+# Yaourt
 alias yi="yaourt -S"
 
 # Systemctl
@@ -32,7 +38,7 @@ alias nig="npm install -g"
 # git
 alias gi="git init"
 alias ga="git add ."
-alias gc="git commit S -am"
+alias gc="git commit -S -am"
 alias gs="git status"
 alias gp="git push"
 alias gl="git log --pretty=oneline"
