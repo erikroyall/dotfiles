@@ -1,7 +1,0 @@
-[user]
-	email = erikroyall@hotmail.com
-	name = Erik Royall
-	signingkey = 6CAC0FD676CFFDE1
-
-[url "git+ssh://erikroyall@git.launchpad.net/"]
-  insteadof = lp:

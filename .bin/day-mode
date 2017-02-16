@@ -1,8 +1,0 @@
-#!/bin/bash
-
-/usr/bin/gsettings set org.gnome.shell.extensions.user-theme name 'Arc'
-/usr/bin/gsettings set org.gnome.desktop.interface gtk-theme 'Arc'
-/usr/bin/gsettings set org.gnome.Terminal.ProfilesList default 7e44582d-572f-4f96-b5f1-b24dd42e159d
-sed -i.bak 's/dark/light/g' /home/erik/.vimrc
-nohup $HOME/.bin/start-gnome-terminal &
-kill -9 $PPID
