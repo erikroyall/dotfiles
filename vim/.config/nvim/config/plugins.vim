@@ -30,4 +30,5 @@ inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 set completeopt-=preview
 
 let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled = 1
 
