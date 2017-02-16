@@ -1,0 +1,2 @@
+set pastetoggle=<F5>
+
