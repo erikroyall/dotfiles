@@ -23,6 +23,8 @@ Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'easymotion/vim-easymotion'
 Plug 'godlygeek/tabular'
 Plug 'mattn/emmet-vim'
+Plug 'morhetz/gruvbox'
+Plug 'NLKNguyen/papercolor-theme'
 
 call plug#end()
 
