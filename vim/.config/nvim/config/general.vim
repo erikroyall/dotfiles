@@ -3,6 +3,8 @@ if !has('nvim')
   set ttymouse=xterm2
 endif
 
+set mouse=a
+
 set number
 autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
