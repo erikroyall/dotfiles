@@ -1,3 +1,6 @@
+" Close NERDTree if its the only thing opened.
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 let g:ycm_global_ycm_extra_conf = "/home/erik/.ycm_extra_conf.py"
 let g:ycm_rust_src_path = "/usr/local/rust/rustc-1.12.0/src"
 let g:ycm_python_binary_path = "python"
@@ -25,4 +28,6 @@ let g:UltiSnipsExpandTrigger="<C-j>"
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 set completeopt-=preview
+
+let g:airline_powerline_fonts=1
 
