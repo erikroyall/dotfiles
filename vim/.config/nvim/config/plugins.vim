@@ -1,7 +1,9 @@
 " Close NERDTree if its the only thing opened.
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-let g:ycm_global_ycm_extra_conf = "/home/erik/.ycm_extra_conf.py"
+au BufNewFile,BufRead,BufEnter *.c,*.h let g:ycm_global_ycm_extra_conf = "/home/erik/.ycm_extra_conf.c.py"
+au BufNewFile,BufRead,BufEnter *.cpp,*.hpp let g:ycm_global_ycm_extra_conf = "/home/erik/.ycm_extra_conf.cpp.py"
+
 let g:ycm_rust_src_path = "/usr/local/rust/rustc-1.12.0/src"
 let g:ycm_python_binary_path = "python"
 let g:ycm_confirm_extra_conf = 0 " Annoying :(
