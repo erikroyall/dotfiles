@@ -16,11 +16,11 @@ set incsearch
 set autoindent
 set cindent
 set expandtab
-set shiftwidth=4
+set shiftwidth=2
 set smartindent
 set smarttab
-set softtabstop=4
-set tabstop=4
+set softtabstop=2
+set tabstop=2
 
 set ruler
 set undolevels=1000
