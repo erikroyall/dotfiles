@@ -1,3 +1,6 @@
+# Commands
+alias ed="ed -p\*\ "
+
 # APT
 alias ai="sudo apt install -y"
 alias au="sudo apt update -y && sudo apt upgrade -y"
