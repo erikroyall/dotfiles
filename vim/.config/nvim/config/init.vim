@@ -32,11 +32,11 @@ Plug 'easymotion/vim-easymotion'
 Plug 'godlygeek/tabular'
 Plug 'mattn/emmet-vim', { 'for': 'html' }
 Plug 'morhetz/gruvbox'
-Plug 'elixir-lang/vim-elixir'
+Plug 'elixir-lang/vim-elixir', { 'for': 'haskell' }
 Plug 'NLKNguyen/papercolor-theme'
-Plug 'eagletmt/ghcmod-vim'
-Plug 'neovimhaskell/haskell-vim'
-Plug 'eagletmt/neco-ghc'
+Plug 'eagletmt/ghcmod-vim', { 'for': 'haskell' }
+Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
+Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 
 call plug#end()
