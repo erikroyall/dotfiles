@@ -19,6 +19,8 @@ let g:deoplete#omni#functions.javascript = [
   \ 'jspc#omni'
 \]
 
+let g:syntastic_ocaml_checkers = ['merlin']
+
 set completeopt=longest,menuone,preview
 let g:deoplete#sources = {}
 let g:deoplete#sources['javascript.jsx'] = ['file', 'ternjs']
@@ -49,4 +51,9 @@ let g:haskell_enable_pattern_synonyms = 1 " to enable highlighting of `pattern`
 let g:haskell_enable_typeroles = 1        " to enable highlighting of type roles
 let g:haskell_enable_static_pointers = 1  " to enable highlighting of `static`
 let g:haskell_backpack = 1                " to enable highlighting of backpack keywords
+
+set rtp^="/home/erik/git/ocp-indent-vim"
+
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+execute "set rtp+=" . g:opamshare . "/merlin/vim"
 

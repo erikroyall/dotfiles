@@ -32,7 +32,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'godlygeek/tabular'
 Plug 'mattn/emmet-vim', { 'for': 'html' }
 Plug 'morhetz/gruvbox'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'elixir-lang/vim-elixir'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'eagletmt/ghcmod-vim'
 Plug 'neovimhaskell/haskell-vim'
