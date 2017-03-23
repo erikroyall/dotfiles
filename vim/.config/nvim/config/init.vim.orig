@@ -39,8 +39,11 @@ Plug 'eagletmt/ghcmod-vim', { 'for': 'haskell' }
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
 Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
-Plug 'editorconfig/editorconfig-vim'
+<<<<<<< HEAD
 Plug 'Shougo/denite.nvim'
+=======
+Plug 'editorconfig/editorconfig-vim'
+>>>>>>> 5116344e378f834e01eb4b87169c64e35246f1b4
 
 call plug#end()
 
