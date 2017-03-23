@@ -15,6 +15,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'majutsushi/tagbar'
 Plug 'xolox/vim-easytags'
 Plug 'vim-syntastic/syntastic'
+Plug 'JuliaEditorSupport/julia-vim'
 Plug 'xolox/vim-misc'
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -38,6 +39,7 @@ Plug 'eagletmt/ghcmod-vim', { 'for': 'haskell' }
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
 Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
 
