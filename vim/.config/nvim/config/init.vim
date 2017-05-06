@@ -2,6 +2,7 @@ filetype off
 
 call plug#begin('~/.vim/plugged')
 
+"Plug 'ayu-theme/ayu-vim'
 Plug 'tpope/vim-sensible'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-fugitive'

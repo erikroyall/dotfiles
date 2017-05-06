@@ -28,6 +28,7 @@ set backspace=indent,eol,start
 
 " Force nvim block cursor shape
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=0
+set guicursor=
 
 let mapleader = ","
 

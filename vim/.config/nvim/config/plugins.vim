@@ -57,3 +57,5 @@ set rtp^="/home/erik/git/ocp-indent-vim"
 let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
 execute "set rtp+=" . g:opamshare . "/merlin/vim"
 
+set termguicolors     " enable true colors support
+let ayucolor="light"  " for light version of theme
