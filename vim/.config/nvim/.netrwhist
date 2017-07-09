@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/home/erik/.config/bash'
 let g:netrw_dirhist_2='/home/erik/dotfiles'
 let g:netrw_dirhist_3='/home/erik/learn/prolog'
+let g:netrw_dirhist_4='/home/erik/learn/meteor/simple-todos/client'

@@ -10,3 +10,4 @@ PERL_LOCAL_LIB_ROOT="/home/erik/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_RO
 PERL_MB_OPT="--install_base \"/home/erik/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/erik/perl5"; export PERL_MM_OPT;
 
+source $HOME/.cargo/env
