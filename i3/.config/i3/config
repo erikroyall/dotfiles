@@ -35,6 +35,9 @@ bindsym $mod+Return exec uxterm
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# unlock gnome keyring
+bindsym $mod+Shift+g exec "/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh"
+
 # start dmenu (a program launcher)
 # bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications

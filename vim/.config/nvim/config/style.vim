@@ -1,4 +1,4 @@
-colorscheme gruvbox
+colorscheme dracula
 set background=dark
 
 hi Error NONE
